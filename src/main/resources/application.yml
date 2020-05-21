@@ -1,0 +1,22 @@
+spring:
+# 服务名称
+  application:
+    name: test-springboot-mongo
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27017/testdb?replSet=rs0
+      host: localhost
+      port: 27017
+      database: testdb
+
+server:
+  port: 8888
+  servlet:
+    context-path: /test
+
+
+
+
+
