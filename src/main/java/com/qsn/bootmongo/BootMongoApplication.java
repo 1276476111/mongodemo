@@ -3,19 +3,16 @@ package com.qsn.bootmongo;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 
 /**
- * 此项目为 spring boot+mongo 项目
- * 尽量集合所有mongo坑， 做一个完美的mongo demo
- * 为日后的 spring boot/cloud 整合mongo做准备
+ * 此项目为 spring boot + mongo 项目
+ * 工具包有http请求
  *
  * @author qiusn
  * @date 2020-05-08 17:23
  */
-
-@SpringBootApplication
-@EnableTransactionManagement
+@SpringBootApplication//(exclude = {RedisAutoConfiguration.class})
 public class BootMongoApplication {
 
     public static void main(String[] args) {

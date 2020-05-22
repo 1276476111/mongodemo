@@ -37,6 +37,9 @@ public class UserController {
      */
     @RequestMapping("/save")
     public String saveUser(@RequestBody User user) {
+        if (user == null) {
+            return "user不能为空";
+        }
         userService.saveUser(user);
         return "插入用户成功";
     }
@@ -63,7 +66,7 @@ public class UserController {
      * 把1号名字改一下
      */
     @RequestMapping("/update")
-    public String updateUser(@RequestBody  User user) {
+    public String updateUser(@RequestBody User user) {
         userService.updateUser(user);
         return "更新用户信息成功";
     }
@@ -72,11 +75,10 @@ public class UserController {
      * 删除fdd0
      */
     @RequestMapping("/remove")
-    public String removeUserByUserName(@RequestBody  User user) {
+    public String removeUserByUserName(@RequestBody User user) {
         userService.removeUserByUserName(user);
         return "删除用户成功";
     }
-
 
 
 }

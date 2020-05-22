@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.MongoTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * 事务配置
@@ -18,6 +19,7 @@ import org.springframework.data.mongodb.MongoTransactionManager;
  * @date 2020-05-21
  */
 @Configuration
+@EnableTransactionManagement
 public class TransactionConfig {
 
     @Bean
