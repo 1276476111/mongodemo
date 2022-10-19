@@ -18,11 +18,11 @@
         <java.version>1.8</java.version>
         <lombok.version>1.18.6</lombok.version>
         <fastjson.version>1.2.58</fastjson.version>
-        <jackson.version>2.9.7</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <common.lang.version>2.6</common.lang.version>
         <processor.yml.version>2.1.5.RELEASE</processor.yml.version>
         <log4j.version>RELEASE</log4j.version>
-        <databind.yml.version>2.9.7</databind.yml.version>
+        <databind.yml.version>2.13.4.1</databind.yml.version>
         <yaml.yml.version>2.9.7</yaml.yml.version>
         <aop.version>2.1.5.RELEASE</aop.version>
         <redis.version>RELEASE</redis.version>
